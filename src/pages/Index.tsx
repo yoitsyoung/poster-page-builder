@@ -1,13 +1,30 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import PosterLayout from '../components/PosterLayout';
+import EmbedArea from '../components/EmbedArea';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-gray-600">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <PosterLayout>
+      <div className="small-heading text-white/90 text-sm tracking-widest mb-2">SOME TEXT</div>
+      
+      <h1 className="spring-title text-6xl md:text-8xl font-normal mb-0 leading-[0.9]">
+        SPRING
+      </h1>
+      <h1 className="spring-title text-6xl md:text-8xl font-normal mt-0 mb-6 leading-[0.9]">
+        SALE
+      </h1>
+      
+      <h2 className="spring-title text-5xl md:text-6xl font-normal mb-4">25% OFF</h2>
+      
+      <div className="poster-divider"></div>
+      
+      <p className="weekend-text text-white/90 text-2xl md:text-3xl mb-8">this weekend only</p>
+      
+      <div className="poster-divider"></div>
+      
+      <EmbedArea />
+    </PosterLayout>
   );
 };
 
